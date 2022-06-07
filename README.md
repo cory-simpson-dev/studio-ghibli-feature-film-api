@@ -1,6 +1,10 @@
 # Studio Ghibli Feature Films API
 
-API built with node.js and Express including Studio Ghibli feature film data. Currently including:
+API built with node.js and Express including Studio Ghibli feature film data. 
+
+![Studio Ghibli Logo](https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png)
+
+Currently including:
 
 - Title
 - Theatrical Release Poster URL (Japan & US)

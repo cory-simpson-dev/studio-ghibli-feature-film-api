@@ -41,3 +41,10 @@ Currently including:
 
 - Theatrical release poster URLs
 - Character still URLs
+
+## Changelog
+
+2022/07/06:
+
+- added stylesheets
+- added grid for sections

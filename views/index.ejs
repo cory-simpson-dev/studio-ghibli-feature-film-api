@@ -13,8 +13,18 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png">
     <section id="documentation">
         <p>All Studio Ghibli Feature Films are included in this API.</p>
-        <p>Access your desired film via .../api/film name</p>
+        <p>Access your desired film via .../api/film name or search below</p>
     </section>  
+    <section class="search">
+        <form>
+            <input id="movie" placeholder="Movie title" type="text">
+            <button id="movieSearch">Search</button>
+        </form>
+    </section>
+    <section class="result">
+        <p>Searched input: <span id="movieTitle"></span></p>
+        <div id="result"></div>
+    </section>
     <section>
         <p>Expected improvements:</p>
         <ul>
@@ -22,15 +32,6 @@
             <li>Character still URLs</li>
         </ul>
     </section>
-    <section class="search">
-        <form>
-            <input placeholder="Movie title" type="text">
-            <button>Search</button>
-        </form>
-    </section>
-    <section class="result">
-        <p>Searched input: <span id="movieTitle"></span></p>
-        <div id="result"></div>
-    </section>
+    <script type="text/javascript" src="/public/js/main.js"></script>
 </body>
 </html>

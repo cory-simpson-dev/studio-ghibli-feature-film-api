@@ -3,7 +3,11 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
+app.set('view engine', 'ejs')
 app.use(cors())
+app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 const films = {
     "castle in the sky": {
@@ -1796,7 +1800,7 @@ const films = {
 }
 
 app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/index.html')
+    response.render('index.ejs')
 })
 
 app.get('/api/', (request, response) => {

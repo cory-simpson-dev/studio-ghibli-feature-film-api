@@ -27,12 +27,6 @@ Currently including:
 - Synopsis
 - Reviews (Rotten Tomatoes & IMDb)
 
-
-## Acknowledgements
-
- - [Readme.so Editor] (https://readme.so/editor)
- 
-
 ## Authors
 
 - [@cory-simpson-dev](https://github.com/cory-simpson-dev)
@@ -43,6 +37,10 @@ Currently including:
 - Character still URLs
 
 ## Changelog
+
+2022/07/12:
+
+- html -> ejs
 
 2022/07/06:
 

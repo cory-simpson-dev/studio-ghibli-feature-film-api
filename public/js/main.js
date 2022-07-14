@@ -2,23 +2,24 @@ document.getElementById('selectFilm').addEventListener('change', selectFilm)
 
 function selectFilm() {
     let movie = document.getElementById('selectFilm').value.toLowerCase();
-    document.getElementById('result').innerHTML = JSON.stringify(films[movie])
-    document.getElementById('title').innerHTML = JSON.stringify(films[movie].title)
-    document.getElementById('poster').innerHTML = JSON.stringify(films[movie].poster)
-    document.getElementById('genre').innerHTML = JSON.stringify(films[movie].genre)
-    document.getElementById('rating').innerHTML = JSON.stringify(films[movie].rating)
-    document.getElementById('director').innerHTML = JSON.stringify(films[movie].director)
-    document.getElementById('producers').innerHTML = JSON.stringify(films[movie].producers)
-    document.getElementById('release').innerHTML = JSON.stringify(films[movie].release)
-    document.getElementById('music').innerHTML = JSON.stringify(films[movie].music)
-    document.getElementById('hepburn').innerHTML = JSON.stringify(films[movie].hepburn)
-    document.getElementById('runtimeMinutes').innerHTML = JSON.stringify(films[movie].runtimeMinutes)
-    document.getElementById('budgetUSD').innerHTML = JSON.stringify(films[movie].budgetUSD)
-    document.getElementById('boxOfficeUSD').innerHTML = JSON.stringify(films[movie].boxOfficeUSD)
-    document.getElementById('character').innerHTML = JSON.stringify(films[movie].character)
-    document.getElementById('awards').innerHTML = JSON.stringify(films[movie].awards)
-    document.getElementById('synopsis').innerHTML = JSON.stringify(films[movie].synopsis)
-    document.getElementById('reviews').innerHTML = JSON.stringify(films[movie].reviews)
+    document.getElementById('result').innerHTML = JSON.stringify(films[movie]);
+    document.getElementById('title').innerHTML = JSON.stringify(films[movie].title);
+    document.getElementById('poster').innerHTML = JSON.stringify(films[movie].poster);
+    document.getElementById('genre').innerHTML = JSON.stringify(films[movie].genre);
+    document.getElementById('rating').innerHTML = JSON.stringify(films[movie].rating);
+    document.getElementById('director').innerHTML = JSON.stringify(films[movie].director);
+    document.getElementById('producers').innerHTML = JSON.stringify(films[movie].producers);
+    document.getElementById('screenwriters').innerHTML = JSON.stringify(films[movie].screenwriters);
+    document.getElementById('release').innerHTML = JSON.stringify(films[movie].release);
+    document.getElementById('music').innerHTML = JSON.stringify(films[movie].music);
+    document.getElementById('hepburn').innerHTML = JSON.stringify(films[movie].hepburn);
+    document.getElementById('runtimeMinutes').innerHTML = JSON.stringify(films[movie].runtimeMinutes);
+    document.getElementById('budgetUSD').innerHTML = JSON.stringify(films[movie].budgetUSD);
+    document.getElementById('boxOfficeUSD').innerHTML = JSON.stringify(films[movie].boxOfficeUSD);
+    document.getElementById('character').innerHTML = JSON.stringify(films[movie].character);
+    document.getElementById('awards').innerHTML = JSON.stringify(films[movie].awards);
+    document.getElementById('synopsis').innerHTML = JSON.stringify(films[movie].synopsis);
+    document.getElementById('reviews').innerHTML = JSON.stringify(films[movie].reviews);
 }
 
 const films = {

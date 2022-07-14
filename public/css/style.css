@@ -1,3 +1,64 @@
 html {
     font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > * {
+    width: 100%;
+    text-align: center;
+}
+
+#documentation p,
+.search{
+    margin-top: 1rem;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.primary {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+}
+
+.output-container > * {
+    width: 100%;
+}
+
+.output-container span {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.output-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
 }

@@ -5,25 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghibli API</title>
-    <link rel="stylesheet" href="public/css/reset.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Studio Ghibli Feature Film API</h1>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png">
     <section id="documentation">
         <p>All Studio Ghibli Feature Films are included in this API.</p>
-        <p>Access your desired film via .../api/film name or search below</p>
+        <p>Access your desired film via .../api/film name or select from the list below</p>
     </section>  
     <section class="search">
-        <form>
-            <input id="movie" placeholder="Movie title" type="text">
-            <button id="movieSearch">Search</button>
-        </form>
+        <select id="selectFilm">
+            <option>Select a film</option>
+            <option value="Arrietty">Arrietty</option>
+            <option value="Castle in the Sky">Castle in the Sky</option>
+            <option value="Earwig and the Witch">Earwig and the Witch</option>
+            <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+            <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+            <option value="How Do You Live?">How Do You Live?</option>
+            <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+            <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+            <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+            <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+            <option value="Ocean Waves">Ocean Waves</option>
+            <option value="Only Yesterday">Only Yesterday</option>
+            <option value="Pom Poko">Pom Poko</option>
+            <option value="Ponyo">Ponyo</option>
+            <option value="Porco Rosso">Porco Rosso</option>
+            <option value="Princess Mononoke">Princess Mononoke</option>
+            <option value="Spirited Away">Spirited Away</option>
+            <option value="Tales from Earthsea">Tales from Earthsea</option>
+            <option value="The Cat Returns">The Cat Returns</option>
+            <option value="The Tale of Princess Kaguya">The Tale of Princess Kaguya</option>
+            <option value="The Wind Rises">The Wind Rises</option>
+            <option value="When Marnie Was There">When Marnie Was There</option>
+            <option value="Whisper of the Heart">Whisper of the Heart</option>
+        </select>
     </section>
     <section class="result">
-        <p>Searched input: <span id="movieTitle"></span></p>
-        <div id="result"></div>
+        <div class="output-container">
+            <span>Title</span>
+            <div id="title"></div>
+        </div>
+        <div class="output-container">
+            <span>Hepburn</span>
+            <div id="hepburn"></div>
+        </div>
+        <div class="output-container">
+            <span>Poster</span>
+            <div id="poster"></div>
+        </div>
+        <div class="output-container">
+            <span>Genre</span>
+            <div id="genre"></div>
+        </div>
+        <div class="output-container">
+            <span>Rating</span>
+            <div id="rating"></div> 
+        </div>
+        <div class="output-container">
+            <span>Release</span>
+            <div id="release"></div>
+        </div>
+        <div class="output-container">
+            <span>Synopsis</span>
+            <div id="synopsis"></div>
+        </div>
+        <div class="output-container">
+            <span>Director</span>
+            <div id="director"></div>
+        </div>
+        <div class="output-container">
+            <span>Screenwriter(s)</span>
+            <div id="screenwriters"></div>
+        </div>
+        <div class="output-container">
+            <span>Producer(s)</span>
+            <div id="producers"></div>
+        </div>
+        <div class="output-container">
+            <span>Runtime (minutes)</span>
+            <div id="runtimeMinutes"></div>
+        </div>
+        <div class="output-container">
+            <span>Budget</span>
+            <div id="budgetUSD"></div>
+        </div>
+        <div class="output-container">
+            <span>Box Office</span>
+            <div id="boxOfficeUSD"></div>
+        </div>
+        <div class="output-container">
+            <span>Characters</span>
+            <div id="character"></div>
+        </div>
+        <div class="output-container">
+            <span>Awards</span>
+            <div id="awards"></div>
+        </div>
+        <div class="output-container">
+            <span>Reviews</span>
+            <div id="reviews"></div>
+        </div>
+        <div class="primary">
+            <span>JSON</span>
+            <p id="result"></p>
+        </div>
     </section>
     <section>
         <p>Expected improvements:</p>
@@ -32,6 +120,6 @@
             <li>Character still URLs</li>
         </ul>
     </section>
-    <script type="text/javascript" src="/public/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

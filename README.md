@@ -38,6 +38,10 @@ Currently including:
 
 ## Changelog
 
+2022/07/13:
+
+- added film list dropdown for API data display
+
 2022/07/12:
 
 - html -> ejs

@@ -33,10 +33,15 @@ Currently including:
  
 ## Roadmap
 
-- Theatrical release poster URLs
 - Character still URLs
 
 ## Changelog
+
+2022/07/20:
+
+- added poster release urls
+- added poster img src for film selection
+- improved layout
 
 2022/07/13:
 

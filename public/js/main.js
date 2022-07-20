@@ -4,7 +4,7 @@ function selectFilm() {
     let movie = document.getElementById('selectFilm').value.toLowerCase();
     document.getElementById('result').innerHTML = JSON.stringify(films[movie]);
     document.getElementById('title').innerHTML = JSON.stringify(films[movie].title);
-    document.getElementById('poster').innerHTML = JSON.stringify(films[movie].poster);
+    document.getElementById('poster').src = films[movie].poster;
     document.getElementById('genre').innerHTML = JSON.stringify(films[movie].genre);
     document.getElementById('rating').innerHTML = JSON.stringify(films[movie].rating);
     document.getElementById('director').innerHTML = JSON.stringify(films[movie].director);
@@ -102,7 +102,7 @@ const films = {
     },
     "grave of the fireflies": {
         "title": "Grave of the Fireflies",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
         "genre": "War/Drama",
         "rating": "Not Rated",
         "release": "April 16, 1988",
@@ -161,7 +161,7 @@ const films = {
     },
     "my neighbor totoro": {
         "title": "My Neighbor Totoro",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg/220px-My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg",
         "genre": "Fantasy/Family",
         "rating": "G",
         "release": "April 16, 1988",
@@ -260,7 +260,7 @@ const films = {
     },
     "kiki's delivery service": {
         "title": "Kiki's Delivery Service",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/0/07/Kiki%27s_Delivery_Service_%28Movie%29.jpg",
         "genre": "Adventure/Family",
         "rating": "G",
         "release": "July 29, 1989",
@@ -399,7 +399,7 @@ const films = {
     },
     "only yesterday": {
         "title": "Only Yesterday",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/OYpost.jpg/220px-OYpost.jpg",
         "genre": "Romance/Drama",
         "rating": "PG",
         "release": "July 20, 1991",
@@ -494,9 +494,9 @@ const films = {
     },
     "porco rosso": {
         "title": "Porco Rosso",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/f/fc/Porco_Rosso_%28Movie_Poster%29.jpg",
         "genre": "Fantasy/Adventure",
-        "rating": "",
+        "rating": "PG",
         "release": "July 18, 1992",
         "director": "Hayao Miyazaki",
         "screenwriters": ["Hayao Miyazaki"],
@@ -565,7 +565,7 @@ const films = {
     },
     "ocean waves": {
         "title": "Ocean Waves",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/e/ea/Umigakikoeru_poster.jpg",
         "genre": "Drama/Romance",
         "rating": "PG-13",
         "release": "May 5, 1993",
@@ -628,7 +628,7 @@ const films = {
     },
     "pom poko": {
         "title": "Pom Poko",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Pompokoposter.jpg/220px-Pompokoposter.jpg",
         "genre": "Fantasy/Family",
         "rating": "PG",
         "release": "July 16, 1994",
@@ -731,7 +731,7 @@ const films = {
     },
     "whisper of the heart": {
         "title": "Whisper of the Heart",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Whisper_of_the_Heart_%28Movie_Poster%29.jpg/220px-Whisper_of_the_Heart_%28Movie_Poster%29.jpg",
         "genre": "Romance/Family",
         "rating": "G",
         "release": "July 15, 1995",
@@ -806,7 +806,7 @@ const films = {
     },
     "princess mononoke": {
         "title": "Princess Mononoke",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Princess_Mononoke_Japanese_poster.png/220px-Princess_Mononoke_Japanese_poster.png",
         "genre": "Fantasy/Adventure",
         "rating": "PG-13",
         "release": "July 12, 1997",
@@ -889,7 +889,7 @@ const films = {
     },
     "my neighbors the yamadas": {
         "title": "My Neighbors the Yamadas",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/My_Neighbors_the_Yamadas_%281999%29.jpg/220px-My_Neighbors_the_Yamadas_%281999%29.jpg",
         "genre": "Family/Comedy",
         "rating": "PG",
         "release": "July 17, 1999",
@@ -940,7 +940,7 @@ const films = {
     },
     "spirited away": {
         "title": "Spirited Away",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Spirited_Away_Japanese_poster.png/220px-Spirited_Away_Japanese_poster.png",
         "genre": "Fantasy/Adventure",
         "rating": "PG",
         "release": "July 20, 2001",
@@ -1027,7 +1027,7 @@ const films = {
     },
     "the cat returns": {
         "title": "The Cat Returns",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Cat_Returns.jpg/220px-Cat_Returns.jpg",
         "genre": "Fantasy/Family",
         "rating": "G",
         "release": "July 19, 2002",
@@ -1098,7 +1098,7 @@ const films = {
     },
     "howl's moving castle": {
         "title": "Howl's Moving Castle",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Howls-moving-castleposter.jpg/220px-Howls-moving-castleposter.jpg",
         "genre": "Fantasy/Family",
         "rating": "PG",
         "release": "November 20, 2004",
@@ -1165,7 +1165,7 @@ const films = {
     },
     "tales from earthsea": {
         "title": "Tales from Earthsea",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Gedo6sn.jpg/220px-Gedo6sn.jpg",
         "genre": "Fantasy/Adventure",
         "rating": "PG-13",
         "release": "July 29, 2006",
@@ -1228,7 +1228,7 @@ const films = {
     },
     "ponyo": {
         "title": "Ponyo",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Ponyo_%282008%29.png/220px-Ponyo_%282008%29.png",
         "genre": "Fantasy/Adventure",
         "rating": "G",
         "release": "July 19, 2008",
@@ -1307,7 +1307,7 @@ const films = {
     },
     "arrietty": {
         "title": "Arrietty",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Karigurashi_no_Arrietty_poster.png/220px-Karigurashi_no_Arrietty_poster.png",
         "genre": "Fantasy/Adventure",
         "rating": "G",
         "release": "July 17, 2010",
@@ -1358,7 +1358,7 @@ const films = {
     },
     "from up on poppy hill": {
         "title": "From Up on Poppy Hill",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/From_Up_on_Poppy_Hill.png/220px-From_Up_on_Poppy_Hill.png",
         "genre": "Family/Romance",
         "rating": "PG",
         "release": "July 16, 2011",
@@ -1449,7 +1449,7 @@ const films = {
     },
     "the wind rises": {
         "title": "The Wind Rises",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/a/a3/Kaze_Tachinu_poster.jpg",
         "genre": "War/Romance",
         "rating": "PG-13",
         "release": "July 20, 2013",
@@ -1536,7 +1536,7 @@ const films = {
     },
     "the tale of princess kaguya": {
         "title": "The Tale of the Princess Kaguya",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/The_Tale_of_the_Princess_Kaguya_%28poster%29.jpg/220px-The_Tale_of_the_Princess_Kaguya_%28poster%29.jpg",
         "genre": "Fantasy/Drama",
         "rating": "PG",
         "release": "November 23, 2013",
@@ -1611,7 +1611,7 @@ const films = {
     },
     "when marnie was there": {
         "title": "When Marnie Was There",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/When_Marnie_Was_There.png/220px-When_Marnie_Was_There.png",
         "genre": "Family/Drama",
         "rating": "PG",
         "release": "July 19, 2014",
@@ -1710,7 +1710,7 @@ const films = {
     },
     "earwig and the witch": {
         "title": "Earwig and the Witch",
-        "poster": "",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Earwig_and_the_Witch.png/220px-Earwig_and_the_Witch.png",
         "genre": "Fantasy/Anime",
         "rating": "PG",
         "release": "August 27, 2021",
@@ -1785,7 +1785,7 @@ const films = {
     },
     "how do you live?": {
         "title": "How Do You Live?",
-        "poster": "",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOTkxN2MwNmUtYTQwZC00NmVhLTkxM2ItZjY5ODA4ZDhlYTE4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
         "genre": "Fantasy/Adventure",
         "rating": "TBA",
         "release": "TBA",

@@ -16,10 +16,52 @@ function selectFilm() {
     document.getElementById('runtimeMinutes').innerHTML = JSON.stringify(films[movie].runtimeMinutes);
     document.getElementById('budgetUSD').innerHTML = JSON.stringify(films[movie].budgetUSD);
     document.getElementById('boxOfficeUSD').innerHTML = JSON.stringify(films[movie].boxOfficeUSD);
-    document.getElementById('character').innerHTML = JSON.stringify(films[movie].character);
+    // empty current #character section
+    document.getElementById('character').innerHTML = '';
+    // run displayCharacters()
+    displayCharacters()
     document.getElementById('awards').innerHTML = JSON.stringify(films[movie].awards);
     document.getElementById('synopsis').innerHTML = JSON.stringify(films[movie].synopsis);
     document.getElementById('reviews').innerHTML = JSON.stringify(films[movie].reviews);
+}
+
+function displayCharacters() {
+    let movie = document.getElementById('selectFilm').value.toLowerCase();
+    let characterSection = document.getElementById('character')
+    // for the number of characters in the 
+    for (let i = 0; i < films[movie].character.length; i++) {
+        let current = films[movie].character[i];
+        // create a div with class 'characterDisplay' (styled in css file)
+        let newDiv = document.createElement("div")
+        newDiv.className = 'characterDisplay'
+        // append div with id `char${i}` to Characters section (#character)
+        characterSection.appendChild(newDiv)
+        // create a span with class 'characterName' with text of current.name
+        let newSpanName = document.createElement("span")
+        newSpanName.className = 'characterName'
+        newSpanName.innerHTML = `${current.name}`
+        // append span to div with id `char${i}`
+        newDiv.appendChild(newSpanName)
+        // create an anchor with class 'still' with src of current.still
+        let newStill = document.createElement("a")
+        newStill.className = 'characterCast'
+        newStill.href = current.still
+        newStill.innerHTML = 'Still'
+        // append anchor to div with id `char${i}`
+        newDiv.appendChild(newStill)
+        // create a span with class 'originalCast' with text of current.originalCast
+        let newSpanOriginalCast = document.createElement("span")
+        newSpanOriginalCast.className = 'characterCast'
+        newSpanOriginalCast.innerHTML = `Voice (JP): ${current.originalCast}`
+        // append span to div with id `char${i}`
+        newDiv.appendChild(newSpanOriginalCast)
+        // create a span with class 'lastEnglishDubbingActor' with text of current.lastEnglishDubbingActor
+        let newSpanEnglishCast = document.createElement("span")
+        newSpanEnglishCast.className = 'characterCast'
+        newSpanEnglishCast.innerHTML = `Voice (EN): ${current.lastEnglishDubbingActor}`
+        // append span to div with id `char${i}`
+        newDiv.appendChild(newSpanEnglishCast)
+    }
 }
 
 const films = {

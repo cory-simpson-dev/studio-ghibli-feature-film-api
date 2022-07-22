@@ -7,7 +7,7 @@ API built with node.js and Express including Studio Ghibli feature film data.
 Currently including:
 
 - Title
-- Theatrical Release Poster URL (Japan & US)
+- Theatrical Release Poster URL (Japan)
 - Genre
 - Rating
 - Release Date
@@ -36,6 +36,10 @@ Currently including:
 - Character still URLs
 
 ## Changelog
+
+2022/07/21:
+
+- added dynamic character displays for film selection
 
 2022/07/20:
 
